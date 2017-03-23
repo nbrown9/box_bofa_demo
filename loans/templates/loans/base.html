@@ -1,0 +1,38 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'loans/styles.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'loans/progress-wizard.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'loans/normalize.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'loans/component.css' %}" />
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../../../static/loans/images/favicons.png" type="image/x-icon" />
+    <title>Bank of America | Loan Portal</title>
+    <meta name="description" content="Bank of America Loans">
+    <meta name="author" content="Nicholas Brown">
+    <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+</head>
+<body>
+ <div id="wrapper">
+        <div class="header">
+            <div class="header-module">
+                <div class="logo-header">
+                    <img class="bofa-logo" alt="Bank of America" src="../../../static/loans/images/BankofAmerica_logo_2x.svg"/>
+                    <img class="secure-logo" alt="Secure Page" src="../../../static/loans/images/securepage.png"/>
+                </div>
+                <div class="red-header">
+                    <span id="redheader-text">Loan Application Portal</span>
+            </div>
+        </div>
+</div>
+{% block content %}
+
+{% endblock %}
+
+</body>
+<script src="{% static 'loans/js/custom-file-input.js' %}"></script>
+<footer>
+<div class="endsec">
+    <img class="footer-info" alt="footer" src="../../../static/loans/images/footer.png"/>
+</div>
+</footer>

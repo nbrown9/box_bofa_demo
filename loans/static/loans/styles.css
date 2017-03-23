@@ -1,0 +1,375 @@
+.logo-header{
+    min-height: 71px;
+    width: auto;
+    display: block;
+    background-color: white;
+}
+.red-header{
+    min-height: 60px;
+    width:auto;
+    display:block;
+    background-color: rgba(220,20,49,1);
+    color: white;
+}
+#redheader-text{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    margin-left: 25px;
+    font-size: 22px;
+}
+.secure-logo{
+    float:right;
+    height:22px;
+    width:110px;
+    vertical-align:middle;
+    margin-right:30px;
+    margin-top: 30px;
+}
+.bofa-logo{
+    vertical-align: middle;
+    float: left;
+    margin-left: 20px;
+    margin-top: 19px;
+    height: 1.75rem;
+}
+
+#wrapper{
+   width: 1000px;
+    margin: auto;
+    background: rgba(249,247,244,1);
+}
+
+body{
+    margin: 0 auto;
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    height: 100%;
+}
+
+.mainsec{
+    width: inherit;
+    height: 1000px;
+    display: block;
+    background-color: rgba(249,247,244,1);
+}
+
+.endsec{
+    width: inherit;
+    position: relative;
+    bottom: 0;
+    height: 95px;
+    display: block;
+    background-color: rgba(236,230,221,1);
+}
+.footer-info{
+     height:60px;
+    width:310px;
+    margin-top: 20px;
+    margin-left:25px;
+}
+
+h2{
+    font-family: "cnx-medium",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    visibility: visible;
+    padding-left:25px;
+    padding-top:15px;
+    color: #012169;
+    font-size: 22px;
+    line-height: 22px;
+}
+h3{
+    font-family: "cnx-medium",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    padding-left:25px;
+    font-size: 18px;
+    color: #6b5e51;
+    padding-bottom:20px;
+
+}
+myfile {
+    font-family: "Times New Roman", Times, serif;
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+myfile + label {
+    margin-top:10px;
+    margin-left: 24px;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    background-color: rgba(220,20,49,1);
+    display: inline-block;
+    padding:10px;
+    border-radius: 10px;
+}
+
+myfile:focus + label,
+myfile + myfile:hover {
+    background-color: rgba(220,20,49,.4);
+}
+myfile {
+	cursor: pointer; /* "hand" cursor */
+}
+
+#ulbox{
+    display:inline-block;
+    width: 30%;
+    margin: 15px;
+    padding:10px;
+    height: auto;
+    margin-left:25px;
+    margin-bottom:40px;
+}
+ul{
+    margin: 15px;
+
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+}
+#ulbox > h3{
+    font-family: "cnx-medium",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ff0000;
+
+}
+li{
+    margin: 20px;
+    margin-left: -20px;
+}
+
+#appimage{
+    width:60em;
+    padding:20px;
+}
+
+#readytoapply{
+    width: 35em;
+    height: 15em;
+    display: inline-block;
+    background-color: rgba(220,215,206,1);
+    vertical-align:middle;
+    margin-bottom:40px;
+    padding-top:30px;
+    padding-left:30px;
+    margin-top:-180px;
+}
+
+#readytoapply > h2{
+    margin:0;
+    padding:0;
+    font-size: 39px;
+    font-weight: 300;
+}
+
+#signuplogin{
+    vertical-align: middle;    
+    font-weight: 400;
+    font-size: 18px;
+    margin-top:24px;
+    margin-left:2px;
+    
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: rgba(0,115,207,1);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    font-size:17px;
+    border-radius: 5px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+#button1 {
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    font-size:17px;
+    border-radius: 5px;
+}
+#or{
+    margin:20px;
+    font-size: 14px;
+}
+
+#readytoapply > h3{
+    margin:0;
+    padding: 0;
+    padding-right:25px;
+    padding-top:25px;
+    font-weight: 300;
+}
+
+#bottomtxt{
+    vertical-align: middle;    
+    font-weight: 800;
+    font-size: 16px;
+    margin-top:24px;
+    margin-left:2px;
+}
+.container {
+      width: auto;
+  }
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.box{
+    margin:40px;
+    width: auto;
+    height: 200px;
+    background-color: rgba(255,0,0,.2);
+}
+
+.submitfile{
+    background-color: rgba(0,115,207,1);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    font-size:17px;
+    border-radius: 5px;
+    margin-left:40px;
+    margin-top:50px;
+    margin-bottom: 40px;
+
+}

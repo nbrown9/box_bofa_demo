@@ -1,0 +1,56 @@
+{% extends "loans/base.html" %}
+
+{% block content %}
+
+<div id="indexhomeimage">
+    <img src="../../../static/loans/images/appimage.png" id="appimage" alt="apply now"/>
+</div>
+
+<div id="ulbox">
+<h3>Contact us today</h3>
+<ul>
+    <li>Our lending specialists offer a no-obligation consultation</li>
+    <li>We offer low fixed-rate and down payment options</li>
+    <li>Ask us how our online tools can help you track your loan progress</li>
+</ul>
+</div>
+
+<div id="readytoapply">
+<h2>Ready to Apply?</h2>
+<h3>Getting approved is fast and easy using our online loan application portal.<br><br></h3>
+<!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+<span id="or">or</span>
+<button id="button1" action="/loans/apply">Apply Now</button>
+<h3 id="bottomtxt">Login or signup to submit, view, and track your loan application.</h3>
+</div>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/loans/apply" autocomplete="off">
+    <div class="imgcontainer">
+      <img src="../../../static/loans/images/avatar1.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+{% endblock %}
